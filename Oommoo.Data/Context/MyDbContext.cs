@@ -1,10 +1,9 @@
-﻿using Oommo.Host.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Oommoo.Data.Entities;
 using File = Oommoo.Data.Entities.File;
 
-namespace Oommo.Host.Context;
+namespace Oommoo.Data.Context;
 
 public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfiguration configuration)
   : DbContext(options)

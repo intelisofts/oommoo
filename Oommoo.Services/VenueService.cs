@@ -1,5 +1,6 @@
 using Oommo.Core.Models;
-using Oommo.Host.Context;
+using Oommoo.Data.Context;
+using Oommoo.Data.Entities;
 using Oommoo.Services.Interfaces;
 
 namespace Oommoo.Services;
@@ -10,7 +11,7 @@ public class VenueService (MyDbContext context) : IVenueService
   {
     try
     {
-      var venue = context.Venues.FirstOrDefault();
+      var venue = context.Venues.FirstOrDefault() ?? new Venue();
       // TODO move this to specific mapper
       var venueModel = new VenueModel();
       venueModel.Id = id;

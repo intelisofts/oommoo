@@ -1,7 +1,7 @@
-using Oommo.Host.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Oommoo.Data.Context;
 
 namespace Oommoo.Data;
 

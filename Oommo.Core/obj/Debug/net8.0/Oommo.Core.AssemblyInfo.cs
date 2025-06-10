@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Oommo.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15ffbb6ad334635487919a91a7b002cd388cc084")]
 [assembly: System.Reflection.AssemblyProductAttribute("Oommo.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Oommo.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
