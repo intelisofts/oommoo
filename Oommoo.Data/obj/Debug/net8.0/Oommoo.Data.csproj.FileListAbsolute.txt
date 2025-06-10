@@ -1,0 +1,12 @@
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/bin/Debug/net8.0/Oommoo.Data.deps.json
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/bin/Debug/net8.0/Oommoo.Data.dll
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/bin/Debug/net8.0/Oommoo.Data.pdb
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/Oommoo.Data.csproj.AssemblyReference.cache
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/Oommoo.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/Oommoo.Data.AssemblyInfoInputs.cache
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/Oommoo.Data.AssemblyInfo.cs
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/Oommoo.Data.csproj.CoreCompileInputs.cache
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/Oommoo.Data.dll
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/refint/Oommoo.Data.dll
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/Oommoo.Data.pdb
+/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/Debug/net8.0/ref/Oommoo.Data.dll

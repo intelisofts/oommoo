@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Oommo.Host.props" />
+</Project>
