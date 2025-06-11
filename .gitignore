@@ -1,3 +1,6 @@
 /Oommo.Host/bin/
 /Oommo.Host/obj/
-
+/Oommo.Data/obj/
+/Oommo.Data/bin/
+/Oommoo.Service/bin/
+/Oommo.Service/obj/
