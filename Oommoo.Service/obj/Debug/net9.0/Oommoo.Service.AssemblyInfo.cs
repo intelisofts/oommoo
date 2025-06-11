@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Oommoo.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4718d2f69b19a69baf762a2027187be1969a285d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df744c289fc1a66621c33b1a9cfb758bf50b9fef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Oommoo.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Oommoo.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

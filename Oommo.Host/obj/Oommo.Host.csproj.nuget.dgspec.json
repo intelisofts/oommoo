@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj": {}
+    "/Users/abrar/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj": {}
   },
   "projects": {
-    "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj": {
+    "/Users/abrar/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj",
+        "projectUniqueName": "/Users/abrar/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj",
         "projectName": "Oommo.Core",
-        "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj",
+        "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj",
         "packagesPath": "/Users/abrar/.nuget/packages/",
-        "outputPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/obj/",
+        "outputPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/abrar/.nuget/NuGet/NuGet.Config"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj": {
+    "/Users/abrar/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj",
+        "projectUniqueName": "/Users/abrar/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj",
         "projectName": "Oommo.Host",
-        "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj",
+        "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj",
         "packagesPath": "/Users/abrar/.nuget/packages/",
-        "outputPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Host/obj/",
+        "outputPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Host/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/abrar/.nuget/NuGet/NuGet.Config"
@@ -85,8 +85,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj": {
-                "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj"
+              "/Users/abrar/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj": {
+                "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj": {
+    "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj",
+        "projectUniqueName": "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj",
         "projectName": "Oommoo.Data",
-        "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj",
+        "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj",
         "packagesPath": "/Users/abrar/.nuget/packages/",
-        "outputPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/",
+        "outputPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/abrar/.nuget/NuGet/NuGet.Config"
@@ -220,14 +220,14 @@
         }
       }
     },
-    "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj": {
+    "/Users/abrar/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj",
+        "projectUniqueName": "/Users/abrar/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj",
         "projectName": "Oommoo.Service",
-        "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj",
+        "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj",
         "packagesPath": "/Users/abrar/.nuget/packages/",
-        "outputPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Service/obj/",
+        "outputPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/abrar/.nuget/NuGet/NuGet.Config"
@@ -242,11 +242,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj": {
-                "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj"
+              "/Users/abrar/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj": {
+                "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj"
               },
-              "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj": {
-                "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj"
+              "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj": {
+                "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj"
               }
             }
           }

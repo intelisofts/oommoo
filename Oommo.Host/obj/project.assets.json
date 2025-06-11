@@ -4211,11 +4211,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj",
+      "projectUniqueName": "/Users/abrar/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj",
       "projectName": "Oommo.Host",
-      "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj",
+      "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Host/Oommo.Host.csproj",
       "packagesPath": "/Users/abrar/.nuget/packages/",
-      "outputPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Host/obj/",
+      "outputPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Host/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/abrar/.nuget/NuGet/NuGet.Config"
@@ -4230,8 +4230,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj": {
-              "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj"
+            "/Users/abrar/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj": {
+              "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Service/Oommoo.Service.csproj"
             }
           }
         }

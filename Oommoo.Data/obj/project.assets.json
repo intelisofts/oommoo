@@ -4157,11 +4157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj",
+      "projectUniqueName": "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj",
       "projectName": "Oommoo.Data",
-      "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj",
+      "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/Oommoo.Data.csproj",
       "packagesPath": "/Users/abrar/.nuget/packages/",
-      "outputPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommoo.Data/obj/",
+      "outputPath": "/Users/abrar/Oommoo-Backend/src/Oommoo.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/abrar/.nuget/NuGet/NuGet.Config"

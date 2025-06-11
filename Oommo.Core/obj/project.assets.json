@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj",
+      "projectUniqueName": "/Users/abrar/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj",
       "projectName": "Oommo.Core",
-      "projectPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj",
+      "projectPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Core/Oommo.Core.csproj",
       "packagesPath": "/Users/abrar/.nuget/packages/",
-      "outputPath": "/Users/abrar/Downloads/Oommoo-Backend/src/Oommo.Core/obj/",
+      "outputPath": "/Users/abrar/Oommoo-Backend/src/Oommo.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/abrar/.nuget/NuGet/NuGet.Config"
