@@ -1,3 +1,5 @@
+using System;
+
 namespace Oommo.Core.Models;
 
 public class VenueModel
