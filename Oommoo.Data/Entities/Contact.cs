@@ -1,6 +1,9 @@
-﻿namespace Oommoo.Data.Entities;
+﻿using System;
+using System.Collections.Generic;
 
-public class Contact
+namespace Oommoo.Data.Entities;
+
+public partial class Contact
 {
     public string Id { get; set; } = null!;
 

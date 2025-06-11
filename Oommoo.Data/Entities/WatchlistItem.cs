@@ -1,6 +1,9 @@
-﻿namespace Oommoo.Data.Entities;
+﻿using System;
+using System.Collections.Generic;
 
-public class WatchlistItem
+namespace Oommoo.Data.Entities;
+
+public partial class WatchlistItem
 {
     public string Id { get; set; } = null!;
 

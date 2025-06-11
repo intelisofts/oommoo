@@ -1,6 +1,10 @@
-﻿namespace Oommoo.Data.Entities;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public class Venue
+namespace Oommoo.Data.Entities;
+
+public partial class Venue
 {
     public string Id { get; set; } = null!;
 
@@ -25,4 +29,21 @@ public class Venue
     public string? DisplayImageUrl { get; set; }
 
     public bool Private { get; set; }
+
+    public string? Capacity { get; set; }
+
+    public string? VenueAddress  { get; set; }
+
+    public string? Location { get; set; }
+
+    public string? CurrentManagement { get; set; }
+
+    public string? PhoneNumber { get; set; }
+
+    public string? OpenedOn { get; set; }
+
+    public string? Stagedoor { get; set; }
+
+    public string? ShowScore { get; set; }
+
 }

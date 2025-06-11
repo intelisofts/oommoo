@@ -1,14 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using Oommoo.Data.Entities;
 using File = Oommoo.Data.Entities.File;
 
 namespace Oommoo.Data.Context;
 
-public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfiguration configuration)
-  : DbContext(options)
+public partial class MyDbContext : DbContext
 {
-  public virtual DbSet<Activity> Activities { get; set; }
+    public MyDbContext()
+    {
+    }
+
+    public MyDbContext(DbContextOptions<MyDbContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<Activity> Activities { get; set; }
 
     public virtual DbSet<Contact> Contacts { get; set; }
 
@@ -48,20 +57,17 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
 
     public virtual DbSet<WatchlistItem> WatchlistItems { get; set; }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseMySQL("Server=localhost;Database=oommoo_ef;User Id=root;Password=Foxter20!8");
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder
-            .UseCollation("utf8mb4_0900_ai_ci")
-            .HasCharSet("utf8mb4");
-
         modelBuilder.Entity<Activity>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("activity")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("activity");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -93,10 +99,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("contact")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("contact");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -159,10 +162,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("event")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("event");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -209,10 +209,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("file")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("file");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -263,10 +260,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("like")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("like");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -304,10 +298,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("production_company")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("production_company");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -351,10 +342,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("production_company_user")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("production_company_user");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -392,10 +380,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("rating")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("rating");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -450,10 +435,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("review")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("review");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -508,10 +490,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("show")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("show");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -568,10 +547,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("show_user")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("show_user");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -611,10 +587,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("tag")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("tag");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -652,10 +625,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("user")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("user");
 
             entity.HasIndex(e => e.Email, "email").IsUnique();
 
@@ -741,10 +711,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("user_permission")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("user_permission");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -781,10 +748,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("venue")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("venue");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -822,16 +786,22 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
             entity.Property(e => e.UpdatedBy)
                 .HasMaxLength(45)
                 .HasColumnName("updated_by");
+
+            entity.Property(e => e.Capacity).HasColumnName("capacity").HasMaxLength(255);
+            entity.Property(e => e.VenueAddress).HasColumnName("venue_address").HasMaxLength(255);
+            entity.Property(e => e.Location).HasColumnName("location").HasMaxLength(255);
+            entity.Property(e => e.CurrentManagement).HasColumnName("current_management").HasMaxLength(255);
+            entity.Property(e => e.PhoneNumber).HasColumnName("phone_number").HasMaxLength(255);
+            entity.Property(e => e.OpenedOn).HasColumnName("opened_on").HasMaxLength(255);
+            entity.Property(e => e.Stagedoor).HasColumnName("stage_door").HasMaxLength(255);
+            entity.Property(e => e.ShowScore).HasColumnName("show_score").HasMaxLength(255);
         });
 
         modelBuilder.Entity<VenueEvent>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("venue_event")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("venue_event");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -878,10 +848,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("venue_show")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("venue_show");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -940,10 +907,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("venue_user")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("venue_user");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -983,10 +947,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("watchlist")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("watchlist");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 
@@ -1027,10 +988,7 @@ public partial class MyDbContext(DbContextOptions<MyDbContext> options, IConfigu
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity
-                .ToTable("watchlist_item")
-                .HasCharSet("utf8mb3")
-                .UseCollation("utf8mb3_general_ci");
+            entity.ToTable("watchlist_item");
 
             entity.HasIndex(e => e.Id, "id_UNIQUE").IsUnique();
 

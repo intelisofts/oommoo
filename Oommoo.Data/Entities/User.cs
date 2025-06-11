@@ -1,6 +1,9 @@
-﻿namespace Oommoo.Data.Entities;
+﻿using System;
+using System.Collections.Generic;
 
-public class User
+namespace Oommoo.Data.Entities;
+
+public partial class User
 {
     public string Id { get; set; } = null!;
 

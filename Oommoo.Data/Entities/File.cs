@@ -1,6 +1,9 @@
-﻿namespace Oommoo.Data.Entities;
+﻿using System;
+using System.Collections.Generic;
 
-public class File
+namespace Oommoo.Data.Entities;
+
+public partial class File
 {
     public string Id { get; set; } = null!;
 
