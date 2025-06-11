@@ -1,9 +1,11 @@
-using Oommoo.Services;
+
+
+using Oommoo.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-builder.Services.AddServices(builder.Configuration);
+builder.Services.ConfigureOommooServices();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

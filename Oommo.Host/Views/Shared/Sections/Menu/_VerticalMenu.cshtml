@@ -10,8 +10,10 @@
   @* ! Hide app brand if navbar-full *@
   <div class='app-brand demo @((@ViewData["navbarFull"] != null && Convert.ToBoolean(@ViewData["navbarFull"])) ? "d-xl-none" : "")'>
     <a asp-controller="Dashboards" asp-action="Index" class="app-brand-link">
-      <span class="app-brand-logo demo me-1">  @await Html.PartialAsync("../_Partials/_Macros")</span>
-      <span class="app-brand-text demo menu-text fw-semibold ms-2">@TempData.Peek("appName")</span>
+      @* <span class="app-brand-logo demo me-1">  @await Html.PartialAsync("../_Partials/_Macros")</span> *@
+      <span class="app-brand-logo demo me-1">   <img src="https://oommoo.xyz/assets/logo-BSL3JZkQ.jpg" alt="logo" width="200" height="40"></span>
+      @* <span class="app-brand-text demo menu-text fw-semibold ms-2">@TempData.Peek("appName")</span> *@
+
     </a>
 
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -130,6 +132,34 @@
         </li>
       </ul>
     </li>
+
+    <!--Shows & Venues-->
+    <li class="menu-header mt-7">
+      <span class="menu-header-text">Shows &amp; Venues</span>
+    </li>
+
+    <li class='menu-item@(currentPage == "/Apps/Email" ? " active" : "")'>
+      <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-email.html"
+         target="_blank"
+         class="menu-link">
+        <i class="menu-icon tf-icons ri-mail-open-line"></i>
+        <div> Venue </div>
+        @* <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div> *@
+      </a>
+    </li>
+    <li class='menu-item@(currentPage == "/Apps/Chat" ? " active" : "")'>
+      <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-chat.html" target="_blank" class="menu-link">
+        <i class="menu-icon tf-icons ri-wechat-line"></i>
+        <div>Chat</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
+      </a>
+    </li>
+    <li class='menu-item@(currentPage == "/Apps/Calendar" ? " active" : "")'>
+      <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-calendar.html" target="_blank" class="menu-link">
+        <i class="menu-icon tf-icons ri-calendar-line"></i>
+        <div>Calendar</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
+      </a>
+    </li>
+
 
     <li class="menu-header mt-7">
       <span class="menu-header-text">Apps &amp; Pages</span>
